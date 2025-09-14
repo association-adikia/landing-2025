@@ -103,6 +103,7 @@ section .container {
 section h2 {
     font-size: var(--font-size-section);
     letter-spacing: -0.035rem;
+    line-height: 1.2;
     margin: 0 0 13px 0;
     padding-left: 3.5px;
 }

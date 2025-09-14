@@ -111,4 +111,5 @@ main .btn:hover {
 footer .menu {
     /* Hide footer menu in content pages */
     visibility: hidden;
+    height: 10px;
 }

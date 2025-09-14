@@ -164,6 +164,10 @@ footer .menu ul li a:hover {
     transition: all var(--transition);
 }
 
+footer .credits {
+    font-size: var(--font-size-subtext);
+}
+
 footer .credits a {
     text-decoration: underline;
 }

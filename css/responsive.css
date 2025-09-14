@@ -20,8 +20,8 @@
 
         --font-size-slogan: 3.0em;
         --font-size-menu: 2.0em;
-        --font-size-hero: clamp(3em, 4.5vw, 6em);
-        --font-size-button: clamp(3.25em, 3vw, 4em);
+        --font-size-hero: clamp(3.75em, 6.5vw, 7em);
+        --font-size-button: clamp(2.5em, 2.5vw, 4em);
         --font-size-year: 5.0em;
         --font-size-section: 6.0em;
         --font-size-subsection: 4.5em;
@@ -39,7 +39,7 @@
 
     section p {
         font-size: var(--font-size-text);
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         line-height: 1.4;
     }
 
@@ -139,7 +139,7 @@
     }
 
     section {
-        scroll-margin-top: 78px;
+        scroll-margin-top: 76px;
     }
 
     header nav ul {
@@ -168,7 +168,7 @@
 
     /* HERO */
     .hero-slides {
-        min-height: clamp(200px, 40vw, 400px);
+        min-height: clamp(250px, 70vw, 500px);
     }
 
     .hero-slide {
@@ -180,12 +180,12 @@
 
     .hero-text {
         min-height: unset;
-        gap: clamp(6px, 2vw, 12px);
+        gap: clamp(0px, 2vw, 60px);
         padding: 0;
     }
 
     .hero-text h1 {
-        margin: clamp(0px, 1vw, 20px) 50px;
+        margin: clamp(0px, 1vw, 20px) 70px;
         font-size: var(--font-size-hero);
         line-height: 1.2;
         letter-spacing: 0;
@@ -194,7 +194,7 @@
 
     .hero-text a {
         /* align-self: center; */
-        margin: 10px 50px;
+        margin: 10px 70px;
         padding: 10px 20px;
     }
 
@@ -241,7 +241,7 @@
     }
 
     .numbers .figure {
-        min-width: 220px;
+        min-width: 170px;
         width: 27%;
     }
 
@@ -314,21 +314,25 @@
         justify-content: center;
     }
 
-    .support-us .right {
-        flex: 0;
-    }
-
     .support-us h2 {
         margin-top: 30px;
     }
 
     .support-us p {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
+    }
+
+    .support-us .btn {
+        margin: 0 40px 0 0;
+    }
+
+    .support-us .cta {
+        margin-bottom: 20px;
     }
 
     .contact details summary {
         font-size: var(--font-size-button);
-        padding: clamp(15px, 5vw, 25px);
+        padding: 14px 28px;
         border-radius: clamp(20px, 10vw, 50px);
     }
 
@@ -354,7 +358,7 @@
 
     footer .menu ul li a {
         padding: 8px 16px;
-        font-size: 2.0rem;
+        font-size: clamp(1.4rem, 3.7vw, 1.8rem);
     }
 }
 
@@ -381,6 +385,18 @@
 
     .container {
         padding: 0 20px;
+    }
+
+    .support-us .right {
+        flex: 0;
+    }
+
+    .support-us p {
+        margin-bottom: 20px;
+    }
+
+    .support-us .btn {
+        margin: 20px 20px 0 0;
     }
 }
 
