@@ -1,0 +1,149 @@
+/*
+* Adikia Website 2025
+* CSS Styles
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === VARIABLES === */
+
+:root {
+    --color-pink: #F7E1D7;
+    --color-blue: #368297;
+    --color-dark-blue: #164050;
+    --color-green: #8AAA79;
+    --color-red: #915761;
+    --color-white: #ffffff;
+    --width: 1440px;
+    --font-family: 'Barlow Semi Condensed', sans-serif;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    font-size: 9.65px;
+    --font-size-slogan: 4.0rem;
+    --font-size-menu: 2.0rem;
+    --font-size-hero: 7rem;
+    --font-size-button: 3.0rem;
+    --font-size-year: 5.0rem;
+    --font-size-section: 6.0rem;
+    --font-size-subsection: 4.5rem;
+    --font-size-text: 3.4rem;
+    --font-size-subtext: 2.4rem;
+
+    --transition: 0.3s ease;
+    --padding: clamp(40px, 5.55vw, 80px);
+
+    scroll-behavior: smooth;
+}
+
+/* === GENERAL === */
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.6;
+    color: var(--color-dark-blue);
+    background-color: var(--color-pink);
+    margin: 0;
+    padding: 0;
+    /* font-size: 18px; */
+    /* overflow-x: hidden; */
+}
+
+emph {
+    font-style: italic;
+}
+
+strong {
+    font-weight: var(--font-weight-semibold);
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+p,
+ol,
+ul {
+    text-align: left;
+    max-width: var(--width);
+}
+
+/* === SECTIONS === */
+
+.container {
+    max-width: var(--width);
+    margin-inline: auto;
+    padding: 0 var(--padding);
+}
+
+section {
+    padding: 54px 0 54px 0;
+    scroll-margin-top: 199px;
+}
+
+section .container {
+    max-width: var(--width);
+}
+
+section h2 {
+    font-size: var(--font-size-section);
+    letter-spacing: -0.035rem;
+    margin: 0 0 13px 0;
+    padding-left: 3.5px;
+}
+
+section p {
+    font-size: var(--font-size-text);
+    letter-spacing: 0.051rem;
+    line-height: 5.2rem;
+    margin: 0 auto 54px auto;
+    padding-left: 3.5px;
+}
+
+
+section label {
+    font-size: var(--font-size-text);
+}
+
+/* === BUTTONS === */
+
+.btn,
+button {
+    background-color: var(--color-pink);
+    color: var(--color-dark-blue);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-family);
+
+    display: inline-block;
+    text-decoration: none;
+    text-align: left;
+    text-transform: uppercase;
+
+    padding: 20px 33px;
+    border-radius: 50px;
+    margin: 10px 0;
+    font-size: var(--font-size-button);
+    letter-spacing: 0.055rem;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--color-white) !important;
+    cursor: pointer;
+}
