@@ -62,9 +62,9 @@
                 <!-- HERO 1 -->
                 <article class="hero-slide hero-1 is-active">
                     <div class="hero-text">
-                        <h1><strong>Accusé à tort</strong> de maltraitance ?<br>
+                        <h1><strong>Accusé à tort</strong> de maltraitance ?<br>
                             Votre bébé a peut-être une <strong>maladie rare</strong></h1>
-                        <a href="#contact" class="btn btn-hero">nous contacter</a>
+                        <a href="#contact" class="btn btn-hero">nous contacter</a>
                     </div>
                 </article>
 
@@ -73,7 +73,7 @@
                     <div class="hero-text">
                         <h1>« Nous emmenons notre bébé à l'<strong>hôpital</strong><br>
                             nous sommes <strong>accusés de maltraitance</strong> »</h1>
-                        <a href="#testimonies" class="btn btn-hero">nos témoignages</a>
+                        <a href="#testimonies" class="btn btn-hero">nos témoignages</a>
                     </div>
                 </article>
 
@@ -83,7 +83,7 @@
                         <h1>toutes les <strong>ressources</strong><br>
                             pour vous <strong>informer</strong></h1>
                         <!-- TODO: URL -->
-                        <a href="#" class="btn btn-hero">en savoir plus</a>
+                        <a href="#" class="btn btn-hero">en savoir plus</a>
                     </div>
                 </article>
             </div>
@@ -182,7 +182,7 @@
                 <div class="left">
                     <h2>Témoignages</h2>
                     <p>
-                        Ces familles de notre association ont accepté de témoigner sur <strong>ADIKIA</strong>, notre organisation internationale qui collecte les témoignages de familles en France et dans le monde..
+                        Des familles de notre association ont accepté de témoigner sur <strong>ADIKIA International</strong>, notre organisation internationale qui collecte les témoignages de familles en France et dans le monde.
                     </p>
                     <!-- TODO: URL -->
                     <a href="#" class="btn">nos familles</a>
@@ -196,7 +196,7 @@
         <!-- FAMILIES CARDS SECTION -->
         <section class="families" id="families">
             <div class="container">
-                <h2>Nos familles</h2>
+                <h2>Familles</h2>
                 <div class="families-cards">
                     <!-- Card 1 -->
                     <article class="family-card">
@@ -379,56 +379,58 @@
                     <br>
                     ADIKIA ne fournit <strong>aucun conseil juridique ou médical</strong>. Consultez des professionnels qualifiés.
                 </p>
+
                 <details>
                     <summary>Remplir le formulaire</summary>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label>Je suis :</label>
-                            <div class="radio-group">
-                                <input type="radio" id="parent" name="iam" value="parent" required><label for="parent">parent / proche</label>
-                                <!-- <input type="radio" id="proche-parent" name="iam" value="proche-parent"><label for="proche-parent">proche parent</label> -->
-                                <input type="radio" id="nounou" name="iam" value="nounou"><label for="nounou">nounou / proche</label>
-                                <!-- <input type="radio" id="proche-nounou" name="iam" value="proche-nounou"><label for="proche-nounou">proche nounou</label> -->
-                                <input type="radio" id="journaliste" name="iam" value="journaliste"><label for="journaliste">journaliste</label>
-                                <input type="radio" id="autre-iam" name="iam" value="autre"><label for="autre-iam">autre</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Concerné par :</label>
-                            <div class="radio-group">
-                                <input type="radio" id="bebe-secoue" name="concern" value="bebe-secoue" required><label for="bebe-secoue">bébé secoué</label>
-                                <input type="radio" id="fractures" name="concern" value="fractures"><label for="fractures">fractures</label>
-                                <input type="radio" id="maltraitance" name="concern" value="maltraitance"><label for="maltraitance">maltraitance</label>
-                                <input type="radio" id="informations" name="concern" value="informations"><label for="informations">informations</label>
-                                <input type="radio" id="autre-placement" name="concern" value="autre-placement"><label for="autre-placement">autre</label>
-                            </div>
-                        </div>
-                        <div class="form-group form-info">
-                            <label>Mes informations :</label>
-                        </div>
-                        <div class="form-fields">
-                            <div class="form-group form-first-name">
-                                <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
-                            </div>
-                            <div class="form-group form-last-name">
-                                <input type="text" id="nom" name="nom" placeholder="Nom" required>
-                            </div>
-                            <div class="form-group form-email">
-                                <input type="email" id="email" name="email" placeholder="Email" required>
-                            </div>
-                            <div class="form-group form-phone">
-                                <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
-                            </div>
-                            <div class="form-group form-postal-code">
-                                <input type="text" id="code-postal" name="code-postal" placeholder="Code postal" inputmode="numeric" required>
-                            </div>
-                            <div class="form-group form-message">
-                                <textarea id="message" name="message" placeholder="Décrivez votre situation avec précision. Nous y répondrons dès que possible."></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn">Envoyer</button>
-                    </form>
                 </details>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label>Je suis :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="parent" name="iam" value="parent" required><label for="parent">parent / proche</label>
+                            <!-- <input type="radio" id="proche-parent" name="iam" value="proche-parent"><label for="proche-parent">proche parent</label> -->
+                            <input type="radio" id="nounou" name="iam" value="nounou"><label for="nounou">nounou / proche</label>
+                            <!-- <input type="radio" id="proche-nounou" name="iam" value="proche-nounou"><label for="proche-nounou">proche nounou</label> -->
+                            <input type="radio" id="journaliste" name="iam" value="journaliste"><label for="journaliste">journaliste</label>
+                            <input type="radio" id="autre-iam" name="iam" value="autre"><label for="autre-iam">autre</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Concerné par :</label>
+                        <div class="radio-group">
+                            <input type="radio" id="bebe-secoue" name="concern" value="bebe-secoue" required><label for="bebe-secoue">bébé secoué</label>
+                            <input type="radio" id="fractures" name="concern" value="fractures"><label for="fractures">fractures</label>
+                            <input type="radio" id="maltraitance" name="concern" value="maltraitance"><label for="maltraitance">maltraitance</label>
+                            <input type="radio" id="informations" name="concern" value="informations"><label for="informations">informations</label>
+                            <input type="radio" id="autre-placement" name="concern" value="autre-placement"><label for="autre-placement">autre</label>
+                        </div>
+                    </div>
+                    <div class="form-group form-info">
+                        <label>Mes informations :</label>
+                    </div>
+                    <div class="form-fields">
+                        <div class="form-group form-first-name">
+                            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                        </div>
+                        <div class="form-group form-last-name">
+                            <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                        </div>
+                        <div class="form-group form-email">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group form-phone">
+                            <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
+                        </div>
+                        <div class="form-group form-postal-code">
+                            <input type="text" id="code-postal" name="code-postal" placeholder="Code postal" inputmode="numeric" required>
+                        </div>
+                        <div class="form-group form-message">
+                            <textarea id="message" name="message" placeholder="Décrivez votre situation avec précision. Nous y répondrons dès que possible."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
             </div>
         </section>
 
@@ -447,7 +449,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="charte.html">Charte de l'association</a></li>
+                    <li><a href="charte.html">Charte</a></li>
                     <li><a href="legal.html">Mentions légales</a></li>
                     <li><a href="mailto:contact@adikia.fr">Contact</a></li>
                 </ul>
