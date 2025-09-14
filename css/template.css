@@ -1,0 +1,169 @@
+@import url("common.css");
+
+/* === HEADER === */
+
+header,
+header * {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0;
+    background-color: var(--color-blue);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    position: relative;
+    padding: 43px var(--padding) 0 var(--padding);
+}
+
+header .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .banner a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logo {
+    /* padding-top: 5px; */
+    /* padding-left: 88px; */
+    min-width: 0;
+    height: 112px;
+}
+
+header .slogan {
+    text-transform: uppercase;
+    color: var(--color-white);
+    /* max-width: 620px; */
+    flex-shrink: 0;
+    text-align: left;
+    font-size: clamp(2.0rem, 3vw, var(--font-size-slogan));
+    line-height: 4.9rem;
+    letter-spacing: -.05px;
+    padding-right: 40px;
+}
+
+header .slogan strong {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-pink);
+}
+
+
+/* === MENU === */
+
+header nav {
+    /* position: absolute; */
+    display: block;
+    margin: 0 auto;
+    /* left: 50%; */
+    /* bottom: 0; */
+    transform: translate(0, 50%);
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: var(--color-pink);
+    border-radius: 5rem;
+    box-shadow: 0 0 10px color-mix(in srgb, var(--color-dark-blue) 50%, transparent);
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: var(--color-dark-blue);
+    font-size: var(--font-size-menu);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 0;
+    padding: 7px clamp(2px, 2vw, 45px);
+    border-radius: 5rem;
+}
+
+header nav ul li a:hover {
+    background-color: var(--color-white);
+    transition: all var(--transition);
+}
+
+
+
+/* === FOOTER === */
+
+footer {
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    font-size: var(--font-size-subtext);
+    padding: 60px 0;
+    text-transform: uppercase;
+}
+
+footer .banner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .slogan {
+    font-size: var(--font-size-subtext);
+    font-weight: var(--font-weight-semibold);
+}
+
+footer .slogan .highlight {
+    color: var(--color-pink);
+}
+
+footer .menu {
+    font-size: var(--font-size-menu);
+}
+
+footer .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
+    padding: 0;
+    background-color: var(--color-pink);
+    border-radius: 5rem;
+    box-shadow: 0px 4px 4px var(--color-dark-blue);
+}
+
+footer .menu ul li {
+    margin: 0;
+}
+
+footer .menu ul li a {
+    color: var(--color-dark-blue);
+    font-size: var(--font-size-menu);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 0;
+    padding: 4px 50px;
+    border-radius: 5rem;
+}
+
+footer .menu ul li a:hover {
+    background-color: var(--color-white);
+    transition: all var(--transition);
+}
+
+footer .credits a {
+    text-decoration: underline;
+}
