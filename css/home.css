@@ -445,7 +445,9 @@
 
 .testimonies .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: start;
+    justify-content: center;
     gap: clamp(20px, 4.167vw, 60px);
 }
 
@@ -455,6 +457,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+    min-width: 300px;
 }
 
 .testimonies p {
@@ -499,7 +502,8 @@
     flex-direction: column;
     gap: 8px;
     flex: 1 1 0;
-    min-width: 280px;
+    min-width: 140px;
+    max-width: 280px;
     margin-bottom: 20px;
 }
 
@@ -569,7 +573,7 @@
 .media {
     background-color: var(--color-blue);
     color: var(--color-white);
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .media h2 {
@@ -711,16 +715,6 @@
     transform: all var(--transition);
 }
 
-/* mobile spacing */
-@media (max-width: 640px) {
-    .media .media-logos {
-        gap: 32px;
-    }
-
-    .media .media-logos img {
-        height: 48px;
-    }
-}
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -764,7 +758,7 @@
 
 .book .right {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     width: 100%;
 }
 
@@ -894,11 +888,25 @@
     transform: rotate(270deg);
 }
 
+.contact details[open]+form {
+    max-height: 1600px;
+    /* padding-top: 36px;
+  padding-bottom: 36px; */
+}
 
 
-/* === Contact Form (revamped) === */
+
+
+
+/* === Contact Form === */
 .contact form {
     margin: 40px auto 0 auto;
+
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease;
 }
 
 .contact .form-group {
@@ -1002,7 +1010,7 @@
     border: none;
     border-radius: 32px;
     font-family: var(--font-family);
-    font-size: var(--font-size-subtext);
+    font-size: var(--font-size-text);
     color: var(--color-dark-blue);
     background: var(--color-white);
     transition: all var(--transition);

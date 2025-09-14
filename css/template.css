@@ -107,7 +107,7 @@ header nav ul li a:hover {
 footer {
     background-color: var(--color-dark-blue);
     color: var(--color-white);
-    font-size: var(--font-size-subtext);
+    /* font-size: var(--font-size-subtext); */
     padding: 60px 0;
     text-transform: uppercase;
 }
