@@ -127,6 +127,8 @@
     border: none;
     cursor: pointer;
     display: grid;
+    margin: 0;
+    padding: 0;
     place-items: center;
     transition: all var(--transition);
     z-index: 2;
