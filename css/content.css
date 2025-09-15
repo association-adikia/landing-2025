@@ -1,22 +1,35 @@
+header nav,
+header .hamburger {
+    visibility: hidden;
+}
+
+
 main {
-    font-size: 8px;
-
-    @media (max-width: 980px) {
-        font-size: 6.5px;
-    }
-
+    font-size: 0.8278rem;
     --font-size-section: 6.0em;
     --font-size-text: 3.4em;
     --font-size-subtext: 2.4em;
 }
 
 main .container {
-    padding: 60px 80px;
+    padding: 6.209rem 4.1rem;
+}
 
-    @media (max-width: 980px) {
-        padding: 30px 40px;
+
+
+@media (max-width: 725px) {
+    main {
+        font-size: 0.6726rem;
+    }
+
+    main .container {
+        padding: 3rem 2.5rem;
     }
 }
+
+
+
+
 
 main h1 {
     font-size: var(--font-size-section);
@@ -27,7 +40,7 @@ main h1 {
 main h2 {
     font-size: var(--font-size-subsection);
     font-weight: var(--font-weight-semibold);
-    margin: 40px 0 30px 0;
+    margin: 4.139rem 0 3.104rem 0;
 }
 
 
@@ -38,7 +51,7 @@ main ol,
 main ul {
     font-size: var(--font-size-text);
     text-align: justify;
-    margin: 20px auto;
+    margin: 2.07rem auto;
     color: var(--color-blue);
 }
 
@@ -51,7 +64,7 @@ main ol,
 main ul {
     list-style-position: outside;
     margin: 0;
-    padding: 0 0 0 34px;
+    padding: 0 0 0 3.518rem;
 }
 
 main ol li {
@@ -66,7 +79,7 @@ main ul li {
 
 main ol li::marker,
 main ul li::marker {
-    padding-right: 20px;
+    padding-right: 2.07rem;
 }
 
 
@@ -93,7 +106,7 @@ main a.btn {
 
 
 main .btw-wrapper {
-    margin: 40px 0 0 0;
+    margin: 4.139rem 0 0 0;
     text-align: left;
 }
 
@@ -111,5 +124,5 @@ main .btn:hover {
 footer .menu {
     /* Hide footer menu in content pages */
     visibility: hidden;
-    height: 10px;
+    height: 1.035rem;
 }

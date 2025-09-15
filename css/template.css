@@ -17,7 +17,7 @@ header {
 
 header .container {
     position: relative;
-    padding: 43px var(--padding) 0 var(--padding);
+    padding: 4.45rem var(--padding) 0 var(--padding);
 }
 
 header .banner {
@@ -36,7 +36,7 @@ header .logo {
     /* padding-top: 5px; */
     /* padding-left: 88px; */
     min-width: 0;
-    height: 112px;
+    height: 11.59rem;
 }
 
 header .slogan {
@@ -47,8 +47,8 @@ header .slogan {
     text-align: left;
     font-size: clamp(2.0rem, 3vw, var(--font-size-slogan));
     line-height: 4.9rem;
-    letter-spacing: -.05px;
-    padding-right: 40px;
+    letter-spacing: -0.005rem;
+    padding-right: 4.139rem;
 }
 
 header .slogan strong {
@@ -91,7 +91,7 @@ header nav ul li a {
     text-transform: uppercase;
     display: block;
     letter-spacing: 0;
-    padding: 7px clamp(2px, 2vw, 45px);
+    padding: 0.7243rem clamp(0.207rem, 2vw, 4.656rem);
     border-radius: 5rem;
 }
 
@@ -108,14 +108,18 @@ footer {
     background-color: var(--color-dark-blue);
     color: var(--color-white);
     /* font-size: var(--font-size-subtext); */
-    padding: 60px 0;
+    padding: 6.209rem 0;
     text-transform: uppercase;
 }
 
 footer .banner {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 3.104rem;
+}
+
+footer .banner img {
+    width: 100%;
 }
 
 footer .slogan {
@@ -136,8 +140,8 @@ footer .menu ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 10px;
-    margin: 40px 0;
+    gap: 1.035rem;
+    margin: 4.139rem 0;
     padding: 0;
     background-color: var(--color-pink);
     border-radius: 5rem;
@@ -155,7 +159,7 @@ footer .menu ul li a {
     text-transform: uppercase;
     display: block;
     letter-spacing: 0;
-    padding: 4px 50px;
+    padding: 0.4139rem 5.174rem;
     border-radius: 5rem;
 }
 

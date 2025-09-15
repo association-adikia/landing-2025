@@ -14,7 +14,7 @@
 
 .hero-slides {
     position: relative;
-    min-height: 824px;
+    min-height: 85.26rem;
 }
 
 .hero-slide {
@@ -37,7 +37,7 @@
 .hero-text {
     max-width: var(--width);
     margin: 0 auto;
-    min-height: 824px;
+    min-height: 85.26rem;
     text-transform: uppercase;
     position: relative;
 
@@ -45,11 +45,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    gap: 61px;
+    gap: 6.312rem;
 }
 
 .hero-text h1 {
-    margin: 100px 140px 20px 100px;
+    margin: 10.35rem 14.49rem 2.07rem 10.35rem;
     font-size: var(--font-size-hero);
     font-weight: 400;
     line-height: 8.8rem;
@@ -112,7 +112,7 @@
 
 .btn-hero {
     align-self: start;
-    margin: 22px 30px 20px 88px;
+    margin: 2.276rem 3.104rem 2.07rem 9.106rem;
     background: var(--accent);
 }
 
@@ -121,8 +121,8 @@
     position: absolute;
     top: 50%;
     translate: 0 -50%;
-    width: 56px;
-    height: 56px;
+    width: 5.795rem;
+    height: 5.795rem;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -139,18 +139,18 @@
 }
 
 .hero-prev {
-    left: 18px;
+    left: 1.86rem;
 }
 
 .hero-next {
-    right: 18px;
+    right: 1.86rem;
 }
 
 /* the chevron is built from two short segments at 90° */
 .hero-arrow .chev {
     position: relative;
-    width: 18px;
-    height: 18px;
+    width: 1.863rem;
+    height: 1.863rem;
 }
 
 .hero-arrow .chev::before,
@@ -166,13 +166,13 @@
 
 /* horizontal and vertical segments (90°) */
 .hero-arrow .chev::before {
-    width: 16px;
-    height: 4px;
+    width: 1.656rem;
+    height: 0.4139rem;
 }
 
 .hero-arrow .chev::after {
-    width: 4px;
-    height: 16px;
+    width: 0.4139rem;
+    height: 1.656rem;
 }
 
 /* rotate the L to point left/right */
@@ -205,7 +205,7 @@
 /* === HISTORY === */
 
 .history {
-    padding: 66px 0 45px 0;
+    padding: 6.829rem 0 4.656rem 0;
     /* margin-top: 0;
     padding-top: 0;
     margin-bottom: 44px; */
@@ -220,7 +220,7 @@
 /* === HISTORY TIMELINE BUTTON === */
 
 .history details {
-    margin: 54px 10px 10px 0px;
+    margin: 5.588rem 1.035rem 1.035rem 0rem;
 }
 
 .history details summary {
@@ -233,9 +233,9 @@
     text-align: left;
     text-transform: uppercase;
 
-    margin: 4px 0 0 0;
-    padding: 25px 34px;
-    border-radius: 50px;
+    margin: 0.4139rem 0 0 0;
+    padding: 2.587rem 3.518rem;
+    border-radius: 5.17rem;
     font-size: var(--font-size-button);
     letter-spacing: +.04rem;
 
@@ -258,7 +258,7 @@
     font-weight: var(--font-weight-regular);
     font-size: 1.1em;
     display: inline-block;
-    margin: 0 16px 0 32px;
+    margin: 0 1.656rem 0 3.311rem;
     transform: rotate(90deg) scaleY(0.8);
     transition: transform 0.5s ease;
 }
@@ -274,10 +274,17 @@
 /* === HISTORY TIMELINE === */
 
 .history .timeline {
-    /* max-height: 0; */
     padding-top: 0;
     padding-bottom: 0;
     overflow: auto hidden;
+
+    scrollbar-color: var(--color-pink);
+
+    ::-webkit-scrollbar {
+        scrollbar-color: var(--color-pink);
+    }
+
+    /* max-height: 0; */
     /* transition: max-height 0.5s ease, padding 0.5s ease; */
 }
 
@@ -286,7 +293,9 @@
 }
 
 .history .timeline img {
-    margin: 20px 0;
+    margin: 2.07rem 0;
+    min-width: 120rem;
+    width: 100%;
 }
 
 
@@ -402,7 +411,7 @@
 .numbers {
     background-color: var(--color-dark-blue);
     color: var(--color-white);
-    padding-bottom: 20px;
+    padding-bottom: 2.07rem;
 }
 
 .numbers h2 {
@@ -412,19 +421,23 @@
 }
 
 .numbers .key-figures {
-    list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    margin: 20px 0 48px 0;
+
+    margin: 2.07rem 0 4.967rem 0;
+    list-style: none;
     /* padding: 0 60px 0 0; */
 }
 
 .numbers .key-figures .figure:nth-child(2) {
-    margin-left: 22px;
+    margin-left: 2.276rem;
 }
 
 .numbers .figure {
-    min-width: 300px;
+    min-width: 31.04rem;
     width: 30%;
 }
 
@@ -448,7 +461,7 @@
     flex-wrap: wrap;
     align-items: start;
     justify-content: center;
-    gap: clamp(20px, 4.167vw, 60px);
+    gap: clamp(2.07rem, 4.167vw, 6.209rem);
 }
 
 .testimonies .left {
@@ -457,11 +470,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    min-width: 300px;
+    min-width: 31.04rem;
 }
 
 .testimonies p {
-    margin-bottom: 78px;
+    margin-bottom: 8.071rem;
     /* padding-right: 110px; */
 }
 
@@ -473,7 +486,7 @@
     flex: 1;
     align-self: center;
     width: 100%;
-    max-width: 500px;
+    max-width: 51.74rem;
 }
 
 .testimonies img {
@@ -493,18 +506,18 @@
 .families .families-cards {
     display: flex;
     align-items: stretch;
-    gap: clamp(16px, 2.5vw, 32px);
+    gap: clamp(1.656rem, 2.5vw, 3.311rem);
     flex-wrap: nowrap;
 }
 
 .families .family-card {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.8278rem;
     flex: 1 1 0;
-    min-width: 140px;
-    max-width: 280px;
-    margin-bottom: 20px;
+    min-width: 14.49rem;
+    max-width: 28.97rem;
+    margin-bottom: 2.07rem;
 }
 
 .families .family-image {
@@ -555,7 +568,7 @@
     overflow: hidden;
     max-width: 100%;
     background: #000;
-    margin: 60px auto;
+    margin: 6.209rem auto;
     border: 0;
 }
 
@@ -590,7 +603,7 @@
     content: "";
     position: absolute;
     inset: 0 auto 0 0;
-    width: 120px;
+    width: 12.42rem;
     pointer-events: none;
     z-index: 2;
     background: linear-gradient(90deg, var(--color-blue) 0%, rgba(49, 125, 138, 0) 70%);
@@ -614,11 +627,11 @@
 .media .media-logos {
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 6.209rem;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 0 0 40px 0;
-    margin: 0 0 40px 0;
+    padding: 0 0 4.139rem 0;
+    margin: 0 0 4.139rem 0;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
@@ -627,12 +640,12 @@
 
 .media .media-logos:focus-visible {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, .5) inset;
-    border-radius: 8px;
+    border-radius: 0.83rem;
 }
 
 /* WebKit scrollbar */
 .media .media-logos::-webkit-scrollbar {
-    height: 8px;
+    height: 0.83rem;
 }
 
 .media .media-logos::-webkit-scrollbar-track {
@@ -659,7 +672,7 @@
 }
 
 .media .media-logos img {
-    height: 58px;
+    height: 6.002rem;
     object-fit: contain;
     display: block;
 }
@@ -675,8 +688,8 @@
     pointer-events: auto;
     position: absolute;
     border: 0;
-    top: -20px;
-    width: 40px;
+    top: -2.07rem;
+    width: 4.139rem;
     height: 100%;
     vertical-align: top;
     background: none;
@@ -687,7 +700,7 @@
     font-weight: var(--font-weight-regular);
     font-size: 3rem;
     display: inline-block;
-    padding: 0 50px 0 50px;
+    padding: 0 5.174rem 0 5.174rem;
     z-index: 10;
 }
 
@@ -763,7 +776,7 @@
 }
 
 .book img {
-    max-height: clamp(280px, 40vw, 500px);
+    max-height: clamp(28.97rem, 40vw, 51.74rem);
     /* margin-right: 40px; */
 }
 
@@ -798,16 +811,16 @@
 
 .support-us h2 {
     color: var(--color-pink);
-    margin-top: 80px;
+    margin-top: 8.278rem;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
 
 .support-us p {
-    margin-bottom: 100px;
+    margin-bottom: 10.35rem;
 }
 
 .support-us .btn {
-    margin: 0 40px 0 0;
+    margin: 0 4.139rem 0 0;
 }
 
 .support-us .btn.donate {
@@ -848,9 +861,9 @@
     text-align: left;
     text-transform: uppercase;
 
-    margin: 0 0 20px 0;
-    padding: 25px 34px;
-    border-radius: 50px;
+    margin: 0 0 2.07rem 0;
+    padding: 1.5rem 3.518rem;
+    border-radius: 5.17rem;
     font-size: var(--font-size-button);
     letter-spacing: +.04rem;
 
@@ -872,7 +885,7 @@
     font-weight: var(--font-weight-regular);
     font-size: 1.1em;
     display: inline-block;
-    margin: 0 16px 0 32px;
+    margin: 0 1.656rem 0 3.311rem;
     transform: rotate(90deg) scaleY(0.8);
     transition: transform 0.5s ease;
 }
@@ -883,7 +896,7 @@
 }
 
 .contact details[open]+form {
-    max-height: 1600px;
+    max-height: 165.6rem;
     /* padding-top: 36px;
   padding-bottom: 36px; */
 }
@@ -894,7 +907,7 @@
 
 /* === Contact Form === */
 .contact form {
-    margin: 40px auto 0 auto;
+    margin: 0 auto 0 auto;
 
     max-height: 0;
     padding-top: 0;
@@ -904,11 +917,11 @@
 }
 
 .contact .form-group {
-    margin-bottom: 28px;
+    margin: 2.897rem 0;
 }
 
 .contact .form-group.form-info {
-    margin-bottom: 8px;
+    margin-bottom: 0.8278rem;
 }
 
 .contact label {
@@ -917,14 +930,14 @@
     color: var(--color-pink);
     text-transform: uppercase;
     letter-spacing: 0.06rem;
-    margin-bottom: 14px;
+    margin-bottom: 1.449rem;
 }
 
 /* Radio groups as push buttons */
 .contact .radio-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 18px 22px;
+    gap: 1.863rem 2.276rem;
 }
 
 .contact .radio-group input[type="radio"] {
@@ -935,7 +948,7 @@
 
 .contact .radio-group label {
     display: inline-block;
-    padding: 14px 28px;
+    padding: 1.449rem 2.897rem;
     border-radius: 999px;
     background: color-mix(in srgb, var(--color-white) 25%, var(--color-blue) 75%);
     color: var(--color-dark-blue);
@@ -963,7 +976,7 @@
 .contact .form-fields {
     display: flex;
     flex-wrap: wrap;
-    gap: 18px 22px;
+    gap: 0 2.3rem;
 }
 
 .contact .form-fields .form-group {
@@ -972,28 +985,28 @@
 
 .contact .form-fields .form-first-name {
     flex: 1 1 45%;
-    min-width: 250px;
+    min-width: 26rem;
 }
 
 .contact .form-fields .form-last-name {
     flex: 1 1 45%;
-    min-width: 250px;
+    min-width: 26rem;
 }
 
 .contact .form-fields .form-email {
     flex: 1 1 45%;
-    min-width: 300px;
+    min-width: 26rem;
 }
 
 .contact .form-fields .form-phone {
     flex: 1 1 45%;
-    min-width: 150px;
+    min-width: 15.2rem;
 }
 
 .contact .form-fields .form-postal-code {
     flex: 1 1 20%;
-    min-width: 150px;
-    max-width: 250px;
+    min-width: 15.5rem;
+    max-width: 26rem;
 }
 
 .contact .form-fields .form-message {
@@ -1006,9 +1019,9 @@
 .contact input[type="tel"],
 .contact textarea {
     width: 100%;
-    padding: 18px 22px;
+    padding: 1.863rem 2.276rem;
     border: none;
-    border-radius: 32px;
+    border-radius: 3.31rem;
     font-family: var(--font-family);
     font-size: var(--font-size-text);
     color: var(--color-dark-blue);
@@ -1022,14 +1035,14 @@
 }
 
 .contact textarea {
-    min-height: 260px;
+    min-height: 26.9rem;
     border: none;
     resize: vertical;
 }
 
 /* Submit button: reuse .btn colors and hover */
 .contact button.btn[type="submit"] {
-    margin-top: 20px;
+    margin-top: 2.07rem;
     border: none;
 }
 

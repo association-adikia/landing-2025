@@ -18,15 +18,14 @@
     --color-green: #8AAA79;
     --color-red: #915761;
     --color-white: #ffffff;
-    --width: 1440px;
-    --font-family: 'Barlow Semi Condensed', sans-serif;
 
+    --font-family: 'Barlow Semi Condensed', sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 
-    font-size: 9.65px;
+    font-size: 50%;
     --font-size-slogan: 4.0rem;
     --font-size-menu: 2.0rem;
     --font-size-hero: 7rem;
@@ -37,9 +36,11 @@
     --font-size-text: 3.4rem;
     --font-size-subtext: 2.4rem;
 
-    --transition: 0.3s ease;
-    --padding: clamp(40px, 5.55vw, 80px);
+    --width: 149rem;
 
+    --padding: clamp(4.14rem, 5.55vw, 8.28rem);
+
+    --transition: 0.3s ease;
     scroll-behavior: smooth;
 }
 
@@ -92,8 +93,8 @@ ul {
 }
 
 section {
-    padding: 54px 0 54px 0;
-    scroll-margin-top: 199px;
+    padding: 5.588rem 0 5.588rem 0;
+    scroll-margin-top: 19.6rem;
 }
 
 section .container {
@@ -104,16 +105,16 @@ section h2 {
     font-size: var(--font-size-section);
     letter-spacing: -0.035rem;
     line-height: 1.2;
-    margin: 0 0 13px 0;
-    padding-left: 3.5px;
+    margin: 0 0 1.345rem 0;
+    padding-left: 0.3622rem;
 }
 
 section p {
     font-size: var(--font-size-text);
     letter-spacing: 0.051rem;
     line-height: 5.2rem;
-    margin: 0 auto 54px auto;
-    padding-left: 3.5px;
+    margin: 0 auto 5.588rem auto;
+    padding-left: 0.3622rem;
 }
 
 
@@ -135,11 +136,11 @@ button {
     text-align: left;
     text-transform: uppercase;
 
-    padding: 20px 33px;
-    border-radius: 50px;
-    margin: 10px 0;
+    padding: 1.5rem 3.5rem;
+    border-radius: 5rem;
+    margin: 1rem 0;
     font-size: var(--font-size-button);
-    letter-spacing: 0.055rem;
+    letter-spacing: 0.05rem;
 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
