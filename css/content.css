@@ -17,7 +17,7 @@ main .container {
 
 
 
-@media (max-width: 725px) {
+@media (max-width: 780px) {
     main {
         font-size: 0.6726rem;
     }

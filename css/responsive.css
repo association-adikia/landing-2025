@@ -6,10 +6,33 @@
     display: none;
 }
 
-@media (min-width: 726px) {
+@media (min-width: 781px) {
     .hero-text h1 {
         position: relative;
         top: 6.209rem;
+    }
+
+    /* Avoid too large height of top banner in vertical mode */
+    @media (max-height: 980px) {
+        header .container {
+            padding-top: 0.5rem;
+        }
+
+        header .banner {
+            margin-bottom: -2rem;
+        }
+
+        header .logo {
+            height: 8rem;
+        }
+
+        header .slogan {
+            font-size: 2.75rem;
+        }
+
+        section {
+            scroll-margin-top: 10.34rem;
+        }
     }
 }
 
@@ -20,8 +43,7 @@
     }
 }
 
-
-@media (max-width: 725px) {
+@media (max-width: 780px) {
 
     body {
         font-size: 0.6209rem;
@@ -361,9 +383,7 @@
         padding: 0.8278rem 1.656rem;
         font-size: clamp(1.4rem, 3.7vw, 1.8rem);
     }
-}
 
-@media (max-width: 725px) {
     .book .container {
         gap: 4.139rem;
         flex-wrap: wrap;
@@ -377,9 +397,7 @@
         background-position-x: 69%;
         background-position-y: 24%;
     }
-}
 
-@media (max-width:725px) {
     header .slogan {
         display: none;
     }
@@ -409,9 +427,11 @@
     }
 }
 
+
+
 /* Motion reduction */
 @media (prefers-reduced-motion: reduce) {
-    @media (max-width: 725px) {
+    @media (max-width: 780px) {
         header nav {
             transition: none;
             transform: none;
