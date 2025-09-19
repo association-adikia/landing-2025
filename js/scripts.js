@@ -1,3 +1,5 @@
+const disabledMessage = 'Nous sommes désolés, nous ne pouvons pas répondre à votre demande.';
+
 // =====================================
 // Media Logos Scroller
 // =====================================
@@ -100,7 +102,6 @@ function initContactForm() {
     if (!formFieldsToDisable || !messageTextarea || !submitButton || concernRadios.length === 0) return;
 
     const initialPlaceholder = messageTextarea.placeholder;
-    const disabledMessage = 'Nous sommes désolés, nous ne pouvons pas répondre à votre demande.';
 
     function handleConcernChange() {
         const selectedConcern = form.querySelector('input[name="concern"]:checked');
@@ -108,7 +109,7 @@ function initContactForm() {
 
         const value = selectedConcern.value;
 
-        if (value === 'autre-placement' || value === 'maltraitance') {
+        if (value === 'other' || value === 'abuse') {
             formFieldsToDisable.classList.add('disabled');
             messageTextarea.placeholder = disabledMessage;
             messageTextarea.value = '';
@@ -187,7 +188,7 @@ function initHeroCarousel() {
 
     // kick off
     slides[0].classList.add('is-active');
-    start();
+    // start();
 }
 
 // =====================================
