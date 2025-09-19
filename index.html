@@ -2,21 +2,31 @@
 <html lang="fr">
 
 <head>
+    <title>ADIKIA France — Protéger les enfants maltraités, soigner les enfants malades</title>
+    <meta name="description" content="Site d''ADIKIA France">
+
+    <!-- BEGIN COPY: head1 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ADIKIA France — Protéger les enfants maltraités, soigner les enfants malades</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/template.css">
+    <!-- END COPY: head1 -->
+
+    <!-- HOME CSS -->
     <link rel="stylesheet" href="css/home.css">
+
+    <!-- BEGIN COPY: head2 -->
     <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- END COPY: head2 -->
 </head>
 
 <body>
 
+    <!-- BEGIN COPY: header -->
     <header>
         <!-- TOP BANNER -->
         <div class="container">
@@ -37,10 +47,10 @@
             <!-- MENU -->
             <nav id="site-menu">
                 <ul>
-                    <li><a href="#">Association</a></li>
+                    <li><a href="#description">Association</a></li>
                     <li><a href="#testimonies">Témoignages</a></li>
                     <li><a href="#families">Familles</a></li>
-                    <li><a href="#konbini">Documentaire</a></li>
+                    <li><a href="#video">Documentaire</a></li>
                     <li><a href="#media">Médias</a></li>
                     <li><a href="#book">Livre</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -48,13 +58,9 @@
             </nav>
         </div>
     </header>
+    <!-- END COPY: header -->
 
     <main>
-
-        <!-- content:start -->
-        <!-- title: ADIKIA France -->
-        <!-- description: ADIKIA France -->
-        <!-- css: css/home.css -->
 
         <section class="hero" aria-roledescription="carousel">
             <!-- Slides -->
@@ -97,18 +103,18 @@
             </button>
         </section>
 
-        <section class="history">
+        <section class="history" id="description">
             <div class="container">
                 <p>
-                    L’association ADIKIA accompagne plus de <strong>1000 parents et assistantes maternelles</strong>.
+                    ADIKIA France accompagne plus de <strong>1000 parents et assistantes maternelles</strong>.
                     Tous sont injustement mis en cause dans des <strong>diagnostics erronés de maltraitance</strong> sur des nourrissons, du fait de <strong>maladies rares</strong> ou de <strong>fragilités</strong>.
                 </p>
                 <h2>Notre histoire</h2>
                 <p>
                     Notre but : mettre un terme aux diagnostics erronés de maltraitance.
-                    En cause, les <strong>recommandations de la Haute Autorité de Santé (HAS)</strong> sur le <strong>syndrome du bébé secoué (SBS)</strong> ignorent la plupart des explications alternatives.
+                    En cause, les <strong>recommandations de la Haute Autorité de Santé (HAS)</strong> sur le <strong>syndrome du bébé secoué (SBS)</strong> ignorent la plupart des explications alternatives (infections, maladies génétiques, hydroéphalie externe, certaines chutes de faible hauteur...).
                     <br>
-                    Adikia fait partie du <strong>groupe de travail HAS</strong> chargé de les actualiser en 2026.
+                    ADIKIA fait partie du <strong>groupe de travail HAS</strong> chargé de les actualiser en 2026.
                 </p>
                 <!-- <details>
                     <summary>Voir la timeline</summary>
@@ -118,7 +124,7 @@
                     <!-- <div class="timeline-item">
                         <div class="timeline-year">2017</div>
                         <div class="timeline-dot"></div>
-                        <div class="timeline-content"><a href="https://www.lemonde.fr/sciences/article/2017/10/24/nous-sommes-accuses-a-tort-de-maltraitance-sur-nos-enfants-suite-a-des-erreurs-de-diagnostic_5205375_1650684.html" target="_blank">fondation d'Adikia</a></div>
+                        <div class="timeline-content"><a href="https://www.lemonde.fr/sciences/article/2017/10/24/nous-sommes-accuses-a-tort-de-maltraitance-sur-nos-enfants-suite-a-des-erreurs-de-diagnostic_5205375_1650684.html" target="_blank">fondation d'ADIKIA</a></div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-year">2019</div>
@@ -229,7 +235,7 @@
             </div>
         </section>
 
-        <section class="konbini" id="konbini">
+        <section class="video" id="video">
             <div class="container">
                 <h2>Documentaire Konbini</h2>
                 <p>En 2024, <strong>Konbini</strong> a réalisé un <strong>documentaire de 52 minutes</strong>
@@ -394,20 +400,20 @@
                         <div class="radio-group">
                             <input type="radio" id="parent" name="iam" value="parent" required><label for="parent">parent / proche</label>
                             <!-- <input type="radio" id="proche-parent" name="iam" value="proche-parent"><label for="proche-parent">proche parent</label> -->
-                            <input type="radio" id="nounou" name="iam" value="nounou"><label for="nounou">nounou / proche</label>
+                            <input type="radio" id="nanny" name="iam" value="nanny"><label for="nanny">nounou / proche</label>
                             <!-- <input type="radio" id="proche-nounou" name="iam" value="proche-nounou"><label for="proche-nounou">proche nounou</label> -->
-                            <input type="radio" id="journaliste" name="iam" value="journaliste"><label for="journaliste">journaliste</label>
-                            <input type="radio" id="autre-iam" name="iam" value="autre"><label for="autre-iam">autre</label>
+                            <input type="radio" id="journalist" name="iam" value="journalist"><label for="journalist">journaliste</label>
+                            <input type="radio" id="other-iam" name="iam" value="other"><label for="other-iam">autre</label>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Concerné par :</label>
                         <div class="radio-group">
-                            <input type="radio" id="bebe-secoue" name="concern" value="bebe-secoue" required><label for="bebe-secoue">bébé secoué</label>
+                            <input type="radio" id="sbs" name="concern" value="sbs" required><label for="sbs">bébé secoué</label>
                             <input type="radio" id="fractures" name="concern" value="fractures"><label for="fractures">fractures</label>
-                            <input type="radio" id="maltraitance" name="concern" value="maltraitance"><label for="maltraitance">maltraitance</label>
-                            <input type="radio" id="informations" name="concern" value="informations"><label for="informations">informations</label>
-                            <input type="radio" id="autre-placement" name="concern" value="autre-placement"><label for="autre-placement">autre</label>
+                            <input type="radio" id="abuse" name="concern" value="abuse"><label for="abuse">maltraitance</label>
+                            <input type="radio" id="information" name="concern" value="information"><label for="information">informations</label>
+                            <input type="radio" id="other" name="concern" value="other"><label for="other">autre</label>
                         </div>
                     </div>
                     <div class="form-group form-info">
@@ -415,38 +421,39 @@
                     </div>
                     <div class="form-fields">
                         <div class="form-group form-first-name">
-                            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+                            <input type="text" id="first-name" name="first-name" placeholder="Prénom *" required>
                         </div>
                         <div class="form-group form-last-name">
-                            <input type="text" id="nom" name="nom" placeholder="Nom" required>
+                            <input type="text" id="last-name" name="last-name" placeholder="Nom *" required>
                         </div>
                         <div class="form-group form-email">
-                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <input type="email" id="email" name="email" placeholder="Email *" required>
                         </div>
                         <div class="form-group form-phone">
-                            <input type="tel" id="telephone" name="telephone" placeholder="Téléphone" required>
+                            <input type="tel" id="phone" name="phone" placeholder="Téléphone *" required>
                         </div>
                         <div class="form-group form-postal-code">
-                            <input type="text" id="code-postal" name="code-postal" placeholder="Code postal" inputmode="numeric" required>
+                            <input type="text" id="postal-code" name="postal-code" placeholder="Code postal *" inputmode="numeric" required>
                         </div>
                         <div class="form-group form-message">
-                            <textarea id="message" name="message" placeholder="Décrivez votre situation avec précision. Nous y répondrons dès que possible."></textarea>
+                            <textarea id="message" name="message" placeholder="Votre message * : Décrivez votre situation avec précision. Nous y répondrons dès que possible."></textarea>
                         </div>
+                        <div class="label-required">* Champ obligatoire</div>
                     </div>
                     <button type="submit" class="btn">Envoyer</button>
                 </form>
             </div>
         </section>
 
-        <!-- content:end -->
     </main>
 
+    <!-- BEGIN COPY: footer -->
     <footer>
         <div class="container">
             <div class="banner">
                 <a href="/"><img src="logo/logo2-full.svg" alt="ADIKIA France" class="logo"></a>
                 <p class="slogan">
-                    L'association ADIKIA condamne toutes les formes de maltraitance.
+                    ADIKIA France condamne toutes les formes de maltraitance.
                     <br>
                     <span class="highlight">Il ne faut jamais secouer un bébé</span>, cela pourrait le handicaper à vie ou le tuer.
                 </p>
@@ -459,7 +466,7 @@
                 </ul>
             </div>
             <p class="credits">
-                &copy; 2017–2025 Association ADIKIA
+                &copy; 2017–2025 ADIKIA France
                 &nbsp;&nbsp;•&nbsp;&nbsp;
                 Tous droits réservés.
 
@@ -473,6 +480,7 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <!-- END COPY: footer -->
 
 </body>
 
