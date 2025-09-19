@@ -1,0 +1,259 @@
+/*
+* ADIKIA Website 2025
+* CSS Styles
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === VARIABLES === */
+
+:root {
+    --color-accent1: #8AAA79 !important;
+    --color-dark: #313628 !important;
+    --color-accent2: #702632 !important;
+    --color-accent3: #C95D63 !important;
+}
+
+
+.hero .hero-1 {
+    --accent: var(--color-pink);
+    --bg: url('../img/hero1.intl.webp');
+
+    & .btn-hero {
+        color: var(--color-dark);
+    }
+
+    &.hero-arrow {
+        background-color: color-mix(in srgb, var(--color-accent1) 50%, transparent);
+    }
+}
+
+.hero .hero-2 {
+    --accent: var(--color-accent1);
+    --bg: url('../img/hero2.intl.webp');
+
+    & .btn-hero {
+        color: var(--color-white);
+
+        &:hover {
+            color: var(--color-dark);
+        }
+    }
+
+    &.hero-arrow {
+        background-color: color-mix(in srgb, var(--color-accent1) 50%, transparent);
+    }
+}
+
+.hero .hero-3 {
+    --accent: var(--color-accent3);
+    --bg: url('../img/hero3.webp');
+
+    & .btn-hero {
+        color: var(--color-white);
+
+        &:hover {
+            color: var(--color-dark);
+        }
+    }
+
+    &.hero-arrow {
+        background-color: color-mix(in srgb, var(--color-accent3) 50%, transparent);
+    }
+}
+
+.hero-text {
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-text h1 {
+    top: 0;
+    margin: 4rem 10rem 2rem 10rem;
+}
+
+.hero-text img {
+    margin: 0 10.35rem;
+    width: 22rem;
+}
+
+
+
+
+.description a.btn {
+    background-color: var(--color-accent1);
+    color: var(--color-white);
+}
+
+
+
+
+.testimonies {
+    background-color: var(--color-dark);
+}
+
+.testimonies .container {
+    display: block;
+}
+
+.testimonies .container p {
+    margin: 1.5rem 0;
+}
+
+.testimonies .container img {
+    margin: 0 0 3.5rem 0;
+}
+
+.testimonies .container a {
+    color: var(--color-accent1);
+}
+
+
+
+/* === MEDIA === */
+.media {
+    background-color: var(--color-pink);
+    color: var(--color-black);
+    /* padding-bottom: 60px; */
+}
+
+.media h2 {
+    color: var(--color-accent1);
+}
+
+.media-btn {
+    color: var(--color-accent1);
+}
+
+.media .fades::before,
+.media .fades::after {
+    background: linear-gradient(90deg, var(--color-pink) 50%, rgba(49, 54, 41, 0) 90%);
+}
+
+.media .fades::after {
+    background: linear-gradient(270deg, var(--color-pink) 50%, rgba(49, 54, 41, 0) 90%);
+}
+
+.media a.btn {
+    background-color: var(--color-accent1);
+    color: var(--color-white);
+}
+
+.media .media-logos {
+    scrollbar-color: color-mix(in srgb, var(--color-accent1) 75%, transparent) transparent;
+}
+
+
+.hero-whoweare {
+
+    background:
+        linear-gradient(to right, var(--color-dark) 0%, rgba(54, 130, 151, 0) 100%),
+        url('../img/whoweare.webp') no-repeat center / cover;
+}
+
+
+.hero-testimonies {
+    background:
+        linear-gradient(to right, var(--color-dark) 0%, rgba(54, 130, 151, 0) 100%),
+        url('../img/mosaic.webp') no-repeat center / cover;
+}
+
+.hero-testimonies h1 {
+    color: var(--color-pink);
+}
+
+
+
+.testimonies-widget strong {
+    color: var(--color-accent1);
+    font-weight: var(--font-weight-semibold);
+}
+
+.testimonies-widget h2 {
+    color: var(--color-dark);
+}
+
+.testimonies-widget img {
+    width: 100%;
+}
+
+
+/* === HISTORY === */
+
+.history {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+
+    & h2 {
+        color: var(--color-pink);
+    }
+}
+
+
+
+/* === VIDEO === */
+
+.video a.btn {
+    color: var(--color-accent1);
+}
+
+
+
+
+/* === BOOK === */
+
+.book .container {
+    display: block;
+    /* flex-direction: column;
+    justify-content: space-between;
+    align-items: center; */
+}
+
+
+.book img {
+    width: 100%;
+    max-height: none;
+}
+
+.book a.btn {
+    margin: 4rem 0 0 0;
+}
+
+
+/* === SUPPORT-US === */
+.support-us {
+    background:
+        linear-gradient(to right,
+            var(--color-dark) 0%,
+            rgba(54, 130, 151, 0) 100%),
+        url('../img/support.intl.webp') no-repeat center center / cover;
+}
+
+.support-us p {
+    margin-bottom: 6rem;
+}
+
+
+
+
+/* === CONTENT === */
+
+main h1 {
+    color: var(--color-accent1);
+}
+
+main h2 {
+    color: var(--color-accent1);
+}
+
+
+main p,
+main ol,
+main ul {
+    color: var(--color-dark);
+}

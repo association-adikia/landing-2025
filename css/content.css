@@ -41,6 +41,7 @@ main h2 {
     font-size: var(--font-size-subsection);
     font-weight: var(--font-weight-semibold);
     margin: 4.139rem 0 3.104rem 0;
+    line-height: 5rem;
 }
 
 
@@ -52,7 +53,7 @@ main ul {
     font-size: var(--font-size-text);
     text-align: justify;
     margin: 2.07rem auto;
-    color: var(--color-blue);
+    color: var(--color-accent1);
 }
 
 main p,
@@ -68,12 +69,12 @@ main ul {
 }
 
 main ol li {
-    margin: 0.5em 0;
+    margin: 1rem 0;
     /* padding: 0 0 10px 0; */
 }
 
 main ul li {
-    margin: 0.5em 0;
+    margin: 1rem 0;
     /* padding: 0 0 5px 0; */
 }
 
@@ -112,11 +113,11 @@ main .btw-wrapper {
 
 main .btn {
     color: var(--color-white);
-    background-color: var(--color-blue);
+    background-color: var(--color-accent1);
 }
 
 main .btn:hover {
-    color: var(--color-dark-blue);
+    color: var(--color-dark);
     background-color: var(--color-white);
 }
 
